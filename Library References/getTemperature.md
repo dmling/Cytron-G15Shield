@@ -20,11 +20,10 @@ Error status in word. If return is non-zero, error occurred. Refer Return Status
 
 ## Example ##
 ```c
-word status, load = 0;
+word status, Temp = 0;
 byte data[2];
 status = g15.getTemperature(1, data); // Read current temperature from G15 with ID number 1
-load = data[0];
-load = load | (word)(data[1] << 8);
+Temp = data[0];
 ```
 
 ## See Also ##
