@@ -18,14 +18,9 @@ Error status in word. If return is non-zero, error occurred. Refer ReturnStatus.
 
 ## Example ##
 word status, Temp = 0;
-
 byte data[2];
-
 status = g15.getTemperature(1, data); // Read current temperature from G15 with ID number 1
-
 Temp = data[0];
-
-
 
 ## See Also ##
 
