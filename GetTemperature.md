@@ -17,13 +17,10 @@ word GetTemperature(byte `*` data);
 Error status in word. If return is non-zero, error occurred. Refer ReturnStatus.
 
 ## Example ##
-word stat,temp=0;
-
-byte data`[`4`]`;
-
-stat = servo1.GetTemperature(data);  //get the current temperature from servo1
-
-temp=data`[`0`]`;
+word status, Temp = 0;
+byte data[2];
+status = g15.getTemperature(1, data); // Read current temperature from G15 with ID number 1
+Temp = data[0];
 
 
 
